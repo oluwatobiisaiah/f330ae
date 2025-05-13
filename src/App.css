@@ -1,38 +1,74 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #eee;
+  padding: 0 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.form-node {
+  border-radius: 6px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  min-width: 180px;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-node-content {
+  padding: 10px 14px;
+}
+
+.form-node-header {
+  display: flex;
+  align-items: center;
+}
+
+.form-node-icon {
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  color: #4d4dff;
+}
+
+.form-node-text {
+  flex: 1;
+}
+
+
+.form-node-label {
+  color: #a0a0a0;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.form-node-title {
+  font-weight:bold;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #484646;
+}
+
+.form-node-handle {
+  width: 10px;
+  height: 10px;
+  background: #4d4dff;
+  border: 2px solid #1a1a2e;
+}
+
+.form-node-handle-target {
+  left: -10px;
+}
+
+.form-node-handle-source {
+  right: -10px;
 }
