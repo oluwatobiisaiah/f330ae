@@ -1,4 +1,4 @@
-import mockData from "../data/graph.json"
+import mockData from "../data/graph.json";
 export async function fetchGraphData() {
-    return mockData;
+	return mockData;
 }
